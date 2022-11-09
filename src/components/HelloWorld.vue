@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <a href="/"><h1 class="green">{{ msg }}</h1></a>
     <h3>
       Загрузите ваш портфель и просматривайте подробный анализ активов
     </h3>
