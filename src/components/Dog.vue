@@ -4,6 +4,7 @@ defineProps({
 })
 </script>
 
+
 <template>
     <header>
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
@@ -18,12 +19,11 @@ defineProps({
             </h3>
 
             <nav>
-                <RouterLink to="/SignIn">Войти</RouterLink>
-                <RouterLink to="/SignUp">Зарегистрироваться</RouterLink>
+                <RouterLink to="#">Войти</RouterLink>
+                <RouterLink to="#">Зарегистрироваться</RouterLink>
             </nav>
         </div>
     </header>
-
 </template>
 
 

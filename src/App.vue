@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import Dog from './components/Dog.vue';
 import UserMap from './components/TheWelcome.vue';
+import Modal from './components/ModalReg.vue';
 export default {
   components: {
     Dog,
