@@ -1,25 +1,21 @@
-<script setup>
+<script>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue';
-
+import Dog from './components/Dog.vue';
+import UserMap from './components/TheWelcome.vue';
+export default {
+  components: {
+    Dog,
+    UserMap,
+  }
+}
 </script>
 
-<template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-
-    <div class="wrapper">
-      <HelloWorld msg="Аналитика для Тинькофф Инвестиций" />
-
-      <nav>
-        <RouterLink to="/SignIn">Войти</RouterLink>
-        <RouterLink to="/SignUp">Зарегистрироваться</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+<template >
+  <Dog />
+  <div>
+    <UserMap />
+  </div>
+  <!-- <RouterView /> -->
 </template>
 
 <style scoped>
@@ -46,7 +42,7 @@ nav {
 
 nav a.router-link-exact-active {
   color: var(--color-text);
-  
+
 }
 
 nav a.router-link-exact-active:hover {
